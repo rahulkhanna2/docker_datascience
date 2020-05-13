@@ -15,4 +15,4 @@ COPY jupyter_notebook_config.py /root/.jupyter/jupyter_notebook_config.py
 
 RUN cat /root/.jupyter/jupyter_notebook_config.py
 
-CMD /bin/bash -c "nohup jupyter notebook --port 8888 --notebook-dir=/home --NotebookApp.allow_password_change=False --allow-root  &> output & sleep 5 && jupyter lab --port 3000 --notebook-dir=/home --NotebookApp.allow_password_change=False --allow-root"
+CMD /bin/bash -c "nohup jupyter notebook --port 8888 --notebook-dir=/home --NotebookApp.allow_password_change=False --allow-root  &> output & sleep 5"
